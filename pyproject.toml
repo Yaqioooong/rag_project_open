@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-project-open"
+version = "0.1.0"
+description = "A local RAG knowledge-base system with Milvus hybrid retrieval, LangGraph workflows, and DeepSeek tool calling."
+readme = "README.md"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[project.scripts]
+rag-demo = "rag_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["rag_cli"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = [
+    "agent*",
+    "documents*",
+    "graph_adaptive*",
+    "graph_corrective*",
+    "llm_models*",
+    "search_tool*",
+    "tools*",
+    "utils*",
+]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

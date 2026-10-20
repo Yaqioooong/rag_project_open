@@ -1,0 +1,26 @@
+# Workflow and integrations
+langchain==1.4.6
+langchain-classic==1.0.8
+langchain-community==0.4.2
+langchain-core==1.6.11
+langchain-experimental==0.4.2
+langchain-huggingface==1.2.3
+langchain-milvus==0.4.0
+langchain-openai==1.7.2
+langchain-text-splitters==1.1.3
+langchain-unstructured==1.0.1
+langgraph==1.2.15
+
+# Vector database and embeddings
+milvus-lite==3.2.2
+pymilvus==3.0.2
+sentence-transformers==6.1.0
+torch==2.14.1
+transformers==5.20.0
+jieba==0.42.1
+
+# Document parsing, configuration, and logging
+Markdown==3.11.1
+unstructured==0.27.27
+python-dotenv==1.2.4
+loguru==0.7.3
